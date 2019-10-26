@@ -15,6 +15,7 @@ class App extends Component {
     };
   }
   render() {
+    const { avengers } = this.state;
     return (
       <div className="App">
         <ul className="navbar">
@@ -26,8 +27,13 @@ class App extends Component {
           </li>
         </ul>
        <Route exact path="/" component={Home}/>
-       <Route exact path="/avengers" component={AvengersList} />
-       <Route path="/avengers/:id" component={AvengerPage} />
+        <Route exact path="/avengers" render={props => (
+          <AvengersList
+            {...props}
+            avengers={avengers}
+          />
+        )} />
+       <Route path="/avengers/:id" render={props => <AvengerPage {...props} avengers={avengers} />} />
       </div>
     );
   }
