@@ -130,3 +130,23 @@ body {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
   transition-delay: 0s;
 }
+
+.link-btn {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 2rem;
+  text-decoration: none;
+  padding: 6px 20px;
+  cursor: pointer;
+  background-color: #ca3535;
+  border-color: #c43c35;
+  color: white;
+  transition: all 0.3s;
+  border-radius: 2px;
+
+}
+
+.link-btn:hover {
+  color: rgba(255, 255, 255, 0.9)
+}
