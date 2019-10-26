@@ -1,5 +1,9 @@
 ## Branch definition
-`routing-with-component-prop-pattern`: implmentation of routing using the component prop pattern
+> `routing-with-component-prop-pattern`: implmentation of routing using the component prop pattern
+
+>`link-component-in-routing`: Demonstrates use of the Link component
+
+> `routing-with-render-prop`: Demonstrates routing with the `render` prop rather than the component prop
 
 ### `npm start`
 

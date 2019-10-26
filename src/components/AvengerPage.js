@@ -1,12 +1,11 @@
 import React from 'react';
 
-import avengers from '../data';
 
 function AvengerPage(props) {
   // const id = props.match.params.id;
   console.log(props)
   const {match: { params: { id } }} = props;
-  const avenger = avengers.find(avenger => `${avenger.id}` === id);
+  const avenger = props.avengers.find(avenger => `${avenger.id}` === id);
   return (
     <div>
       <img className="character-image" src={avenger.img} alt={avenger.name} />
