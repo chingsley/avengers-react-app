@@ -6,7 +6,7 @@ function AvengersList(props) {
   return (
     <div className="characters-list-wrapper">
       {props.avengers.map(avenger => (
-        <div className="character-card" key={avenger.id}>
+        <div className="character-card" key={avenger.id} onClick={() => routeToAvenger(props, avenger)}>
           <img src={avenger.thumbnail} alt={avenger.name} />
           <h2><Link to={`/avengers/${avenger.id}`}>{avenger.name}</Link></h2>
           <p>({avenger.nickname})</p>
@@ -14,6 +14,10 @@ function AvengersList(props) {
       ))}
     </div>
   );
+}
+
+function routeToAvenger(props, avenger) {
+  props.history.push(`/avengers/${avenger.id}`);
 }
 
 export default AvengersList;

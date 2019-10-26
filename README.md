@@ -5,6 +5,12 @@
 
 > `routing-with-render-prop`: Demonstrates routing with the `render` prop rather than the component prop
 
+> `nested-routes`: Demonstrates how to implement nested-dynamic routes
+
+>`history-object`: How to use react router's history object to programmatically navigate between routes.
+
+
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
